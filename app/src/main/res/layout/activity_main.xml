@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:text="Crud User"
+            android:textSize="40dp"
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="FirstName "
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="LastName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Adresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:hint="Adresse"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/BtnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Add"
+            android:text="Add"
+            app:backgroundTint="#2196F3" />
+
+        <Button
+            android:id="@+id/BtnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Update"
+            android:text="Update"
+            app:backgroundTint="#FFC107" />
+
+        <Button
+            android:id="@+id/BtnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Delete"
+            android:text="Delete"
+            app:backgroundTint="#E91E63" />
+        <Button
+            android:id="@+id/BtnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="View"
+            android:text="View Data" />
+    </LinearLayout>
+
+</RelativeLayout>
