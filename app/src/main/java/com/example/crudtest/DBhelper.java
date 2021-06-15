@@ -16,7 +16,6 @@ public class DBhelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table user (firstName TEXT primary key,lastName TEXT,adresse TEXT)");
-
     }
 
     @Override
@@ -79,6 +78,5 @@ public class DBhelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM user", null);
        return cursor;
-
     }
 }
